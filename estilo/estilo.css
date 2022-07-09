@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+body{
+	width: 100%;
+	background-color: #D0A5F2;
+	align-items: center;
+}
+
+
+hr{
+	border-color:#391447;
+}
+
+
+
+#dep1 {
+	background-color: #A577BC;
+	border: 5px solid #391447;
+	width: 1254px;
+	min-height: 253px;
+	position: absolute;
+	left: 80px;
+	top: 185px;
+	z-index:3;
+	border-radius: 10px;
+	
+	
+}
+
+#dep2 {
+	background-color: #A577BC;
+	border: 5px solid #391447;
+	width: 1254px;
+	min-height: 253px;
+	position: absolute;
+	left: 80px;
+	top: 485px;
+	z-index:3;
+	border-radius: 10px;
+	
+}
+
+#dep3 {
+	background-color: #A577BC;
+	border: 5px solid #391447;
+	width: 1254px;
+	min-height: 253px;
+	position: absolute;
+	left: 80px;
+	top: 785px;
+	z-index:3;
+	border-radius: 10px;
+	
+}
+
+#dep4 {
+	background-color: #A577BC;
+	border: 5px solid #391447;
+	width: 1254px;
+	min-height: 253px;
+	position: absolute;
+	left: 80px;
+	top: 1085px;
+	z-index:3;
+	border-radius: 10px;
+	
+}
+
+#form {
+	background-color: #FFF;
+	width: 740px;
+	height: 45px;
+	min-height: 60px;
+	position: absolute;
+	left: 351px;
+	top: 1485px;
+	z-index:3;
+	border-radius: 20px;
+	font-family: "book Antiqua","Berlin Sans FB Demi", "Century Gothic", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #660000;
+	text-align: center;
+	padding-top: 20px; 
+	
+}
+
+
+
+.depoimento01 {
+    width: 310px;
+    min-height: 243px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+    font-family: "Berlin Sans FB Demi","book Antiqua", "Century Gothic", sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 227px;
+    padding-top: 19px;
+    color: #391346;
+}
+
+
+.depoimento02 {
+    width: 375px;
+    min-height: 253px;
+    position: absolute;
+    left: 346px;
+    top: 3px;
+    font-family: "book Antiqua", "Century Gothic", "Berlin Sans FB Demi", sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+	padding-left: 12px;
+	height: 257px;
+
+	
+}
+
+
+.depoimento03 {
+    width: 873px;
+    height: 222px;
+    min-height: 80px;
+    position: absolute;
+    left: 335px;
+    top: 19px;
+    font-family: "Century Gothic","book Antiqua","Berlin Sans FB Demi", sans-serif;
+    font-size: 1.1em;
+    color: #FFF;
+    border-left: 4px solid #391447;
+    padding-left: 19px;
+ 	
+}
+
+
+
+/*<div class="d">
+		<p><br /></p>
+		<p>	  
+  			<div class="risco"></div>
+		     Depoimentos 
+			<div class="risco2"></div>
+		</p>
+</div>
+
+
+
+
+<br><br><p></p>
+		<div class="d">
+		<p><br /></p>
+		<p>	  
+  			<div class="risco"></div>
+		     Leis
+			<div class="risco2"></div>
+		</p>
+		</div>	
+    
+
+*/
+
+.d{
+	 
+	font-family: "Berlin Sans FB Demi","book Antiqua", "Century Gothic", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	
+}
+
+
+.risco{
+	border-top: 8px double #391447;
+	width: 390px;
+	height: 1px;
+    position: absolute;
+	left: 100px;
+    top: 130px;		
+	
+}
+
+.risco2{
+	border-top: 8px double #391447;
+	width: 390px;
+	height: 1px;
+    position: absolute;
+	right: 100px;
+    top: 130px;
+			
+}
+
+.rodape{
+	position: absolute;
+	bottom: -950px;
+}
+.depoimentof01 {
+	overflow:hidden;
+	position: relative;
+	border-radius: 35px;
+	padding-top: 26px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 300px;
+	height:auto;
+}
+.button{
+	height: 36px;
+	width: 37px;
+	cursor: pointer;
+}
+
+
+ #button1 {
+	top: 1405px;
+	left: 494px;
+	background-image: url(../imagens/bt1.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: absolute;
+}
+#button1:hover {
+	background-image: url(../imagens/bt1_hover.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button2 {
+	background-image: url(../imagens/bt2.fw.png);
+	top: 1405px;
+	left: 594px;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button2:hover {
+	background-image: url(../imagens/bt2_hover.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button3 {
+	background-image: url(../imagens/bt3.fw.png);
+	top: 1405px;
+	left: 694px;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button3:hover {
+	background-image: url(../imagens/bt3_hover.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button4 {
+	background-image: url(../imagens/bt4.fw.png);
+	top: 1405px;
+	left: 794px;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button4:hover {
+	background-image: url(../imagens/bt4_hover.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button5 {
+	background-image: url(../imagens/bt5.fw.png);
+	top: 1405px;
+	left: 894px;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#button5:hover {
+	background-image: url(../imagens/bt5_hover.fw.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position:absolute;
+}
+#click{
+	font-weight: bold;
+	color: #660000;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#click:hover{
+	font-weight: bold;
+    color: #000000;	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}

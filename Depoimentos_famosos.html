@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mal me quer</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="estilo/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="menu">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="home.html"><img src="imagens/logo.fw.png" /></a>  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Ajuda</a>
+    <ul>
+      <li><a href="leis.html">Leis</a></li>
+      <li><a href="ongs.html">ONGs</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Depoimentos</a>
+    <ul>
+      <li><a href="Depoimentos.html">Dia a dia</a></li>
+      <li><a href="Depoimentos_famosos.html">Famosos</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Informa&ccedil;&otilde;es</a>
+    <ul>
+      <li><a href="comodenunciar.html">Como denunciar</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="historia.html">Hist&oacute;ria</a></li>
+      <li><a href="tipos.html">Formas de viol&ecirc;ncia</a></li>
+</ul>
+  </li>
+  <li><a href="galeria.html">Galeria</a>  </li>
+  <li><a href="sobrenos.html">Sobre n&oacute;s</a></li>
+</ul>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+<script>
+	function famosos(p) {
+			paginas(pag = p)
+	}
+	function paginas() {
+		switch (pag) {
+			case 0:
+				window.document.getElementById('global').innerHTML ='<div id="dep1"><img class="depoimentof01" src="imagens/maria.jpg" alt="Maria da Penha" width="300px" ><div class="depoimento02"><br /><u>Maria da Penha, farmacêutica</u></div> <div class="depoimento03"><p><br /></p><p>Durante mais de duas décadas, Maria da Penha Maia Fernandes foi alvo de agressões e <strong>tentativas de assassinato</strong> cometidas pelo próprio marido – entre elas afogamento, eletrocussão e disparo de arma de fogo, que a deixou paraplégica. Ela se tornou vítima emblemática de uma violência que mata e deixa sequelas em milhares de mulheres no Brasil, todos os dias. Em busca de justiça, Maria da Penha se tornou ativista da causa e, em 7 de agosto de 2006, foi sancionada a Lei Maria da Penha, em sua homenagem.</p>	</div></div><div id="dep2"><img class="depoimentof01" src="imagens/rita.jpg" alt="Rita Lee" width="300px" ><div class="depoimento02"><br /><u>Rita Lee, cantora</u></div> <div class="depoimento03"><p><br /></p><p>Em sua recém-lançada autobiografia, a cantora Rita Lee relatou o abuso sexual sofrido na infância. "Quando escrevi como o fato ficou impresso na minha memória, meio que desencantou por si só. A ferida foi curada", disse à Folha de S.Paulo. Na ocasião, ela ,<strong> foi violentada com uma chave de fenda por um técnico de máquina de costura.</strong></p></div> </div><div id="dep3"><img class="depoimentof01" src="imagens/palmirinha.jpg" alt="palmirinha" width="300px"><div class="depoimento02"><br /><u>Palmirinha Onofre, mestre na cozinha</u></div> <div class="depoimento03"><p><br /></p><p>Palmirinha revelou, em 2012, ter passado por um relacionamento abusivo com seu ex-marido. Segundo ela, três mulheres do então companheiro estiveram presentes em sua festa de casamento. "Ele bebia muito, tinha várias amantes. Eu achava que se eu me separasse dele eu iria prejudicar o futuro das minhas filhas. Apanhei muito dele até minha segunda filha se casar. Aí eu me separei, eu tinha 45 anos", comenta. <strong>"Minha família dizia que mulher que se separava do marido não prestava".</strong></p></div> </div><div id="dep4"><img class="depoimentof01" src="imagens/oprah.jpg" alt="Oprah" width="300px"><div class="depoimento02"><br /><u>Oprah Winfrey, apresentadora</u></div> <div class="depoimento03"><p><br /></p><p>Ao apresentador norte-americano David Letterman, Oprah detalhou um dos momentos mais sombrios de sua história: a série de violências sofridas quando criança, que incluem um estupro consumado aos 9 anos. "Qualquer um que tenha sofrido abuso verbal ou físico passará grande parte da vida reconstruindo sua autoestima", desabafou na ocasião.</p></div> '
+				break;
+				case 1:
+					window.document.getElementById('global').innerHTML = `<div id="dep1">
+	
+  	
+	  			   
+		<img class="depoimentof01" src="imagens/gretchen.jpg" alt="Gretchen" width="300px" >
+         	
+	
+  <div class="depoimento02">
+        			<br /><u>Gretchen, cantora</u>
+  			</div> 
+
+  			<div class="depoimento03">
+			<p><br /></p>
+			<p>"<strong>Eu era agredida todos os dias.</strong> Agredida de verdade. Eu era espancada. Eu apanhava por qualquer motivo. Eu apanhava porque sorria, apanhava porque ficava triste, eu apanhava porque tomava banho com as minhas irmãs quando elas iam na minha casa. E ele não tinha nenhum problema com bebida. Ele me batia porque era psicopata. Mas, quando passava a crise, vinha chorando, passava mal do coração, dizia que tinha problema e que não vivia sem mim, que se eu saísse [de casa] ele morria. Eu vivia em uma gaiola de ouro, porque ele realmente tinha muito dinheiro"</p>
+		</div> 
+</div>
+	
+<div id="dep2">
+	
+  		
+	  			  <img class="depoimentof01" src="imagens/piovani.jpg" alt="piovani" width="300px">
+         
+	
+       		<div class="depoimento02">
+        		<br /><u>Luana Piovani, atriz</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+<p>A terrível situação também manchou o passado de Luana Piovani. “Eu não fui violentada, fui tocada. Tinha uns 6, 8 anos, mas depois nunca mais aconteceu. Foram umas quatro vezes esse abuso. E até hoje tenho certa dificuldade quando vou ao ginecologista. E acho que é por conta disso. Acho que a médica desconfiou porque eu tenho reações que sei que não comuns”, contou em entrevista à Rede Record.<strong>Vale lembrar que</strong>, pela Constituição Federal, <strong>qualquer ato libidinoso, ainda que não haja penetração, é considerado estupro.</strong></p>
+			</div> 
+</div>
+
+<div id="dep3">
+
+	  			<img class="depoimentof01" src="imagens/joanna.jpg" alt="Joanna Maranhão" width="300px">
+     
+	
+       		<div class="depoimento02">
+        		<br /><u>Joanna Maranhão, nadadora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p>
+				<p>“O fato dele ter me despido na cama da própria esposa e ter me bolinado enquanto eu chorava e pedia para parar ainda é um fato que me enoja e me dói, mas isso não me derrotou”, diz parte da carta aberta escrita pela nadadora Joanna Maranhão, que denunciou o ex-técnico Eugênio Miranda por estupro.<strong> A atleta deu nome à lei Joanna Maranhão.</strong> A medida determina que o prazo para que um crime sexual prescreva só comece a contar aos 18 anos da vítima, momento em que poderá denunciar.</p>
+			</div> 
+</div>
+
+<div id="dep4">
+	
+	
+	  			   <img class="depoimentof01" src="imagens/xuxa.jpg" alt="Xuxa" width="300px">
+         
+	
+       		<div class="depoimento02">
+        		<br /><u>Xuxa Meneghel, apresentadora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+		<strong>“Nós achamos que somos culpados.</strong> Eu sempre achei que eu estava fazendo alguma coisa: ou era minha roupa ou era o que eu fazia que chamava a atenção. Então, ao invés de falar para as pessoas, eu tinha vergonha, me calava, me sentia mal, me sentia suja, me sentia errada. E se eu não tivesse uma mãe, se eu não tivesse o amor da minha mãe, eu teria ido embora, porque o medo de você ter aquelas sensações de novo, passar por tudo isso, é muito grande. Só que eu não falei pra minha mãe, eu não tinha essa coragem de falar com ela. E a maioria das crianças, dos adolescentes, passa por isso”, contou Xuxa, em lágrimas, ao Fantástico sobre os abusos sofridos até os 13 anos de idade. </p>
+			</div> 
+	
+  			
+</div>`
+			break;
+			case 2: window.document.getElementById('global').innerHTML = `<div id="dep1">
+	
+  			
+	  			   
+<img class="depoimentof01" src="imagens/gaga.jpg" alt="Lady Gaga" width="300px" >
+         
+	
+  <div class="depoimento02">
+        			<br /><u>Lady Gaga, cantora</u>
+  				</div> 
+
+  		<div class="depoimento03">
+						<p><br /></p>
+						<p>"Em dezembro de 2014, no programa do apresentador Howard Stern, Lady Gaga falou pela primeira vez publicamente sobre seu estupro. Ela diz que tinha 19 anos, na época, e teve como algoz um produtor musical. "Não contei para ninguém, acho, por sete anos. Não sabia o que pensar sobre isso. Não sabia como aceitar. <strong>Não sabia como não me culpar, ou pensar que era minha culpa.</strong> Foi algo que relamente mudou minha vida.<strong> Mudou quem eu era completamente"</strong>, completou.</p>
+		</div> 
+</div>
+	
+<div id="dep2">
+	
+  		
+	  			 <img class="depoimentof01" src="imagens/madonna.jpg" alt="Madonna" width="300px">
+  
+	
+       		<div class="depoimento02">
+        		<br /><u>Madonna, cantora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+<p>Em Nova Iorque, fiquei sob a mira de uma arma.<strong> Fui estuprada no telhado de um prédio para o qual fui arrastada com uma faca em minhas costas”</strong>, contou à publicação estadunidense Harper’s Bazaar.
+A artista foi casada com Sean Penn. Na época em que estavam juntos, dois casos foram amplamente divulgados na mídia, afirmando que Madonna teria sido agredida por Sean com um bastão de beisebol e amarrada e atacada pelo ele. O ator chegou a ser denunciado pela ex por, <strong>violência doméstica</strong> e preso por conta do caso de 1989. Madonna, no entanto, foi a público, em 2015, e voltou atrás, afirmando que as acusações contra Sean não eram verdadeiras.</p>
+			
+			</div> 
+</div>
+
+<div id="dep3">
+	
+  			
+	  			   <img class="depoimentof01" src="imagens/whitney.jpg" alt="Whitney Houston" width="300px">
+         	
+	
+       		<div class="depoimento02">
+        		<br /><u>Whitney Houston, cantora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p>
+				<p>Em entrevista à Oprah, a cantora relatou seu cotidiano de violência ao lado do então marido Bobby Brown. ",<strong> Ele cuspiu na minha cara e a minha filha assistiu.</strong> Passava por mim e me empurrava contra a parede", revelou. Segundo ela, havia sido o ex-marido quem a levou para o caminho das drogas e a união acabou após 15 anos. Bobby chegou a ser denunciado às autoridades depois de agredir Whitney e deixá-las com diversas marcas no rosto e corpo.</p>
+			</div> 
+</div>
+
+<div id="dep4">
+	
+
+	  			<img class="depoimentof01" src="imagens/amber.jpg" alt="Amber Heard" width="300px">
+         	
+	
+       		<div class="depoimento02">
+        		<br /><u>Amber Heard, atriz e modelo</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+		<p>Acusou o ex-marido Johnny Depp de tê-la agredido em 2016. <strong>Ela afirmou que o ator a atacou e jogou um iPhone em seu rosto.</strong> O episódio de violência teria acontecido depois que Depp se irritou com a ex-esposa, que discutia com ele ao mesmo tempo em que falava com uma amiga ao telefone. De acordo com o site "TMZ", a atriz teria sofrido outras agressões durante o casamento e teria ainda, inclusive, guardado um vídeo como prova do comportamento abusivo do ex. Os dois entraram em um acordo, e Amber retirou a denúncia de agressão.</p>
+			</div> 
+	
+</div>`
+			break;
+			case 3:
+			window.document.getElementById('global').innerHTML = `<div id="dep1">
+	
+  			
+	  			   
+<img class="depoimentof01" src="imagens/rihana.jpg" alt="Rihanna" width="300px" >
+         	
+	
+  <div class="depoimento02">
+        			<br /><u>Rihanna, cantora</u>
+  				</div> 
+
+  		<div class="depoimento03">
+						<p><br /></p>
+						<p>Em 2009, a cantora apanhou do então namorado Chris Brown. Os dois chegaram a reatar a relação por um breve período após a agressão, pela qual o cantor foi condenado a trabalhos comunitários e cinco anos de liberdade condicional. "Eu era muito protetora dele.<strong> Eu sentia que as pessoas não entendiam ele. Mas depois de um tempo naquela situação, você percebe que você é o inimigo.</strong> Se você suporta o que está acontecendo, talvez esteja aceitando que merece esse tipo de coisa, e foi aí que eu finalmente tive que dizer, fui estúpida em pensar que poderia aguentar isso", revelou em entrevista à "Vanity Fair".</p>
+		</div> 
+</div>
+	
+<div id="dep2">
+	
+  			
+	  			  <img class="depoimentof01" src="imagens/brooke.jpg" alt="Brooke Beaton" width="300px">
+        
+	
+       		<div class="depoimento02">
+        		<br /><u>Brooke Beaton, modelo</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+<p>A modelo, de 27 anos, foi agredida pelo namorado em 2015. Ele desferiu socos no rosto e ombros da moça, com quem se relacionava há quatro meses, além de ter impedido que Brooke pedisse ajuda <strong> tentando sufocá-la dentro do carro.</strong> Ela então resolveu usar seu drama pessoal para mobilizar outras vítimas de relacionamentos abusivos a se afastarem dos agressores. A modelo deixou-se fotografar por uma amiga mostrando seus hematomas e criando a campanha <strong>#SilenceHidesViolence</strong>. Ela revelou em entrevista ao jornal "Argus Leader", que recebeu diversas mensagens de apoio, especialmente de vítimas que se identificaram com sua história e com a campanha.</p>
+			
+			</div> 
+</div>
+
+<div id="dep3">
+	
+  		
+	  			 <img class="depoimentof01" src="imagens/jessica.jpg" alt="Jéssica Amaral" width="300px">
+        
+	
+       		<div class="depoimento02">
+        		<br /><u>Jéssica Amaral, modelo</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p>
+				<p>
+A modelo e ex-capa da "Playboy" foi agredida pelo ex-companheiro, o rapper Natan Braga.<strong> Jéssica teria levado socos, chutes e marteladas</strong> na casa do pai de sua filha, então com oito meses. Ela sofreu uma fratura no nariz e precisou levar pontos na cabeça. Em entrevista à "RedeTV!", o rapaz assumiu as agressões, dizendo que perdeu a cabeça por saber que a jovem teria deixado a filha dos dois com os avós maternos em Porto Alegre. Segundo ele, que nega o uso de um martelo para agredir a moça, Jéssica estaria em São Paulo para trabalhar como garota de programa, o que ela negou. 
+
+</p>
+			</div> 
+</div>
+
+<div id="dep4">
+	
+
+	  			  
+	  			 <img class="depoimentof01" src="imagens/Brisa.png" alt="Brisa Ramos" width="300px">
+       
+	
+       		<div class="depoimento02">
+        		<br /><u>Brisa Ramos, atriz</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+				<p>A atriz acusou o então namorado Kadu Moliterno de tê-la agredido por três vezes durante o relacionamento de cinco meses dos dois.<strong> Ela afirmou não ter feito a denúncia por acreditar que o companheiro poderia mudar.</strong> Segundo ela, o ex costumava "sacudi-la". "Nunca o havia denunciado porque achava que a pessoa tinha que ter hematoma no corpo para dar queixa. Depois, conversei com um advogado, e ele disse que não". Kadu Moliterno já foi acusado de agressão em outra ocasião há dez anos, quando a ex-mulher Ingrid Saldanha, com quem o ator teve três filhos, registrou queixa na delegacia contra ele por espancamento.</p>
+			</div> 
+			</div> `
+			break;
+			case 4:
+			window.document.getElementById('global').innerHTML = `<div id="dep1">
+	
+  			
+	  			   
+<img class="depoimentof01" src="imagens/rihana.jpg" alt="Rihanna" width="300px" >
+         	
+	
+  <div class="depoimento02">
+        			<br /><u>Rihanna, cantora</u>
+  				</div> 
+
+  		<div class="depoimento03">
+						<p><br /></p>
+						<p>Em 2009, a cantora apanhou do então namorado Chris Brown. Os dois chegaram a reatar a relação por um breve período após a agressão, pela qual o cantor foi condenado a trabalhos comunitários e cinco anos de liberdade condicional. "Eu era muito protetora dele.<strong> Eu sentia que as pessoas não entendiam ele. Mas depois de um tempo naquela situação, você percebe que você é o inimigo.</strong> Se você suporta o que está acontecendo, talvez esteja aceitando que merece esse tipo de coisa, e foi aí que eu finalmente tive que dizer, fui estúpida em pensar que poderia aguentar isso", revelou em entrevista à "Vanity Fair".</p>
+		</div> 
+</div>
+	
+<div id="dep2">
+	
+  			
+	  			  <img class="depoimentof01" src="imagens/brooke.jpg" alt="Brooke Beaton" width="300px">
+        
+	
+       		<div class="depoimento02">
+        		<br /><u>Brooke Beaton, modelo</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+<p>A modelo, de 27 anos, foi agredida pelo namorado em 2015. Ele desferiu socos no rosto e ombros da moça, com quem se relacionava há quatro meses, além de ter impedido que Brooke pedisse ajuda <strong> tentando sufocá-la dentro do carro.</strong> Ela então resolveu usar seu drama pessoal para mobilizar outras vítimas de relacionamentos abusivos a se afastarem dos agressores. A modelo deixou-se fotografar por uma amiga mostrando seus hematomas e criando a campanha <strong>#SilenceHidesViolence</strong>. Ela revelou em entrevista ao jornal "Argus Leader", que recebeu diversas mensagens de apoio, especialmente de vítimas que se identificaram com sua história e com a campanha.</p>
+			
+			</div> 
+</div>
+
+<div id="dep3">
+	
+  		
+	  			 <img class="depoimentof01" src="imagens/jessica.jpg" alt="Jéssica Amaral" width="300px">
+        
+	
+       		<div class="depoimento02">
+        		<br /><u>Jéssica Amaral, modelo</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p>
+				<p>
+A modelo e ex-capa da "Playboy" foi agredida pelo ex-companheiro, o rapper Natan Braga.<strong> Jéssica teria levado socos, chutes e marteladas</strong> na casa do pai de sua filha, então com oito meses. Ela sofreu uma fratura no nariz e precisou levar pontos na cabeça. Em entrevista à "RedeTV!", o rapaz assumiu as agressões, dizendo que perdeu a cabeça por saber que a jovem teria deixado a filha dos dois com os avós maternos em Porto Alegre. Segundo ele, que nega o uso de um martelo para agredir a moça, Jéssica estaria em São Paulo para trabalhar como garota de programa, o que ela negou. 
+
+</p>
+			</div> 
+</div>
+
+<div id="dep4">
+	
+
+	  			  
+	  			 <img class="depoimentof01" src="imagens/Brisa.png" alt="Brisa Ramos" width="300px">
+       
+	
+       		<div class="depoimento02">
+        		<br /><u>Brisa Ramos, atriz</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+				<p>A atriz acusou o então namorado Kadu Moliterno de tê-la agredido por três vezes durante o relacionamento de cinco meses dos dois.<strong> Ela afirmou não ter feito a denúncia por acreditar que o companheiro poderia mudar.</strong> Segundo ela, o ex costumava "sacudi-la". "Nunca o havia denunciado porque achava que a pessoa tinha que ter hematoma no corpo para dar queixa. Depois, conversei com um advogado, e ele disse que não". Kadu Moliterno já foi acusado de agressão em outra ocasião há dez anos, quando a ex-mulher Ingrid Saldanha, com quem o ator teve três filhos, registrou queixa na delegacia contra ele por espancamento.</p>
+			</div> 
+			</div> 
+	
+ 			
+
+<div id="dep1">
+	
+  		
+	  			   
+				<img class="depoimentof01" src="imagens/christy.jpg" alt="Christy Mack" width="300px" >
+         	
+	
+  <div class="depoimento02">
+        			<br /><u>Christy Mack, atriz</u>
+  				</div> 
+
+  		<div class="depoimento03">
+						<p><br /></p>
+						<p>
+Foi agredida pelo ex-namorado, o lutador de MMA Jon Koppenhaver. Os dois estavam separados há três meses, quando ele resolveu aparecer na casa de Christy e a viu com um amigo. "Ele me fez tirar a roupa e tomar banho na frente dele, depois me arrastou para fora e bateu no meu rosto. Minhas lesões incluem 18 ossos quebrados ao redor dos meus olhos, meu nariz foi quebrado em dois lugares, perdi dentes e vários outros estão quebrados. Tenho uma costela fraturada e o fígado severamente rompido por causa de um chute na minha lateral. Minha perna está tão lesionada que não consigo andar sozinha", contou ela, que ainda sofreu uma tentativa de estupro e conseguiu fugir e pedir ajuda.
+
+</p>
+		</div> 
+</div>
+		
+<div id="dep2">
+	
+  			
+	  			   <img class="depoimentof01" src="imagens/sharon.jpg" alt="Sharon" width="300px">
+         	
+       		<div class="depoimento02">
+        		<br /><u>Sharon Osbourne, apresentadora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br /></p>
+				<p>Ozzy e Sharon protagonizaram diversas brigas, mas a mais feia delas sem dúvida, aconteceu em 1989. Na ocasião, o cantor agarrou e apertou o pescoço da esposa, tentando estrangulá-la. Sharon conseguiu escapar e ligar para a polícia, acusando-o de agressão. A briga está presente na biografia do cantor "Eu Sou Ozzy". O casal fez as pazes e ela retirou a queixa, com a condição que o marido se internasse numa clínica de reabilitação. "Me arrependo de ter tentado matar a Sharon. Não era meu plano sair, ficar puto, tentar estrangulá-la e acordar na cadeia", contou ele, em 2009, em entrevista ao "Mirror".</p>
+			
+			</div> 
+			</div>
+
+<div id="dep3">
+	
+  			
+	  		<img class="depoimentof01" src="imagens/tina.jpg" alt="Tina Turner" width="300px">
+         	
+	
+       		<div class="depoimento02">
+        		<br /><u>Tina Turner, cantora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p><p>Tina e Ike tiveram um relacionamento profissional e pessoal de anos. <strong>Viciado em bebidas e drogas</strong>, o marido culpava Tina por problemas nos palcos. <strong>Ela era constantemente agredida física e verbalmente.</strong> Por diversas vezes, a cantora se apresentou com hematomas, olhos roxos e lábios inchados, até que, após 18 anos, resolveu dar um basta na relação. Tina abriu mão de todo o patrimônio conquistado ao lado de Ike para manter o sobrenome do marido, com o qual havia feito fama. Recomeçou a carreira e alcançou sucesso em carreira solo. O ex bem que tentou uma reconciliação, mas os dois nunca mais voltaram a se apresentar juntos.</p>
+			</div> 
+			</div>
+
+<div id="dep4">
+	
+	  			<img class="depoimentof01" src="imagens/oksana.jpg" alt="Oksana Grigorieva" width="300px">
+      
+	
+       		<div class="depoimento02">
+        		<br /><u>Oksana Grigorieva, pianista</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p><p>
+Em 2010, a pianista russa acusou o então marido Mel Gibson de agressão. Segundo ela, além de tê-la ofendido, o ator teria dado socos em sua cabeça e boca enquanto ela segurava a filha do casal, de apenas oito meses, nos braços. Os episódios de violência teriam ocorrido entre janeiro e fevereiro. E o ator teria, inclusive, <strong>ameaçado a família com uma arma.</strong> A mulher chegou a divulgar uma gravação feita clandestinamente em que é possível ouvir um homem, supostamente Gibson,<strong> afirmando que ela havia merecido a agressão.</strong> Os dois fizeram um acordo.
+
+</p>
+			</div> 
+</div>`
+			break;
+		}
+	}
+	window.setInterval("paginas()",0000)
+</script>
+</div>
+	
+
+<div class="d">
+		<p><br /></p>
+		<p>	  
+  			<div class="risco"></div>
+		     Depoimentos de Famosos
+			<div class="risco2"></div>
+		</p>
+</div>
+	
+<!-- depoimentos - case0: -->	
+<div id="global">
+<div id="dep1">
+
+	   
+			<img class="depoimentof01" src="imagens/maria.jpg" alt="Maria da Penha" width="300px" >
+        
+	
+  		<div class="depoimento02">
+        			<br /><u>Maria da Penha, farmacêutica</u>
+  				</div> 
+
+  		<div class="depoimento03">
+						<p><br /></p>
+						<p>Durante mais de duas décadas, Maria da Penha Maia Fernandes foi alvo de agressões e <strong>tentativas de assassinato</strong> cometidas pelo próprio marido – entre elas afogamento, eletrocussão e disparo de arma de fogo, que a deixou paraplégica. Ela se tornou vítima emblemática de uma violência que mata e deixa sequelas em milhares de mulheres no Brasil, todos os dias. Em busca de justiça, Maria da Penha se tornou ativista da causa e, em 7 de agosto de 2006, foi sancionada a Lei Maria da Penha, em sua homenagem.</p>	
+	</div>
+	</div>
+
+<div id="dep2">
+	
+  			
+	  			   <img class="depoimentof01" src="imagens/rita.jpg" alt="Rita Lee" width="300px" >
+         	
+	
+  <div class="depoimento02">
+        			<br /><u>Rita Lee, cantora</u>
+  				</div> 
+
+  <div class="depoimento03">
+						<p><br /></p>
+						<p>Em sua recém-lançada autobiografia, a cantora Rita Lee relatou o abuso sexual sofrido na infância. “Quando escrevi como o fato ficou impresso na minha memória, meio que desencantou por si só. A ferida foi curada”, disse à Folha de S.Paulo. Na ocasião, ela ,<strong> foi violentada com uma chave de fenda por um técnico de máquina de costura.</strong></p>
+					</div> 
+</div>
+	
+<div id="dep3">
+	
+  			
+	  			  <img class="depoimentof01" src="imagens/palmirinha.jpg" alt="palmirinha" width="300px">
+         
+	
+       		<div class="depoimento02"><br /><u>Palmirinha Onofre, mestre na cozinha</u>
+  			</div> 
+
+			<div class="depoimento03">
+			  <p><br />
+				</p><p>Palmirinha revelou, em 2012, ter passado por um relacionamento abusivo com seu ex-marido. Segundo ela, três mulheres do então companheiro estiveram presentes em sua festa de casamento. "Ele bebia muito, tinha várias amantes. Eu achava que se eu me separasse dele eu iria prejudicar o futuro das minhas filhas. Apanhei muito dele até minha segunda filha se casar. Aí eu me separei, eu tinha 45 anos", comenta. <strong>"Minha família dizia que mulher que se separava do marido não prestava".</strong></p>
+			</div> 
+</div>
+
+<div id="dep4">
+	
+  			
+	  			<img class="depoimentof01" src="imagens/oprah.jpg" alt="Oprah" width="300px">
+         
+	
+       		<div class="depoimento02">
+        		<br /><u>Oprah Winfrey, apresentadora</u>
+  			</div> 
+
+			<div class="depoimento03">
+				<p><br />
+				</p>
+				<p>Ao apresentador norte-americano David Letterman, Oprah detalhou um dos momentos mais sombrios de sua história: a série de violências sofridas quando criança, que incluem um estupro consumado aos 9 anos. “Qualquer um que tenha sofrido abuso verbal ou físico passará grande parte da vida reconstruindo sua autoestima”, desabafou na ocasião.</p>
+			</div> 
+</div>
+</div>
+
+
+<div id="button1" class="button" onclick="famosos(0)"> </div>
+<div id="button2" class="button" onclick="famosos(1)"> </div>
+<div id="button3" class="button" onclick="famosos(2)"> </div>
+<div id="button4" class="button" onclick="famosos(3)"> </div>
+<div id="button5" class="button" onclick="famosos(4)"> </div>	
+	<div id="form">
+	
+	Para enviar um depoimento <a href="formulario.html" id="click"><u>clique aqui</u></a>
+	
+	</div>
+
+	<div class="rodape">
+		<img src="imagens/Rodape.fw.png" alt="Rodape" class="backimg" >	
+	</div>
+</div>
+
+</body>
+</html>

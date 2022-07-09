@@ -1,0 +1,283 @@
+#sobre  {
+	background-color: #003;
+	height: 239px;
+	width: 239px;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-radius: 100%;
+	margin-top: 20%;
+	position: absolute;
+	margin-left: 13%;
+}
+#sobrebraz {
+	background-color: #003;
+	height: 239px;
+	width: 239px;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-radius: 100%;
+	margin-top: 40%;
+	position: absolute;
+	margin-left: 27%;
+}
+#sobredani  {
+	background-color: #003;
+	height: 239px;
+	width: 239px;
+	margin-top: 20%;
+	position: absolute;
+	border-radius: 100%;
+	margin-left: 42%;
+}
+#sobrepedro  {
+	background-color: #003;
+	height: 239px;
+	width: 239px;
+	margin-top: 40%;
+	position: absolute;
+	border-radius: 100%;
+	margin-left: 58%;
+}
+#sobredourado  {
+	background-color: #003;
+	height: 239px;
+	width: 239px;
+	margin-top: 20%;
+	border-radius: 100%;
+	position: absolute;
+	margin-left: 73%;
+
+}
+
+#insta {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 280px;
+	position:absolute;
+}
+#twitter {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 330px;
+	position:absolute;
+}
+#facebook {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 232px;
+	position:absolute;
+}
+#insta img {
+	height: 50px;
+	width: 50px;
+}
+#facebook img {
+	height: 50px;
+	width: 50px;
+}
+#twitter img {
+	height: 50px;
+	width: 50px;
+}
+#facebookdani {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 647px;
+	position:absolute;
+}
+#instadani {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 695px;
+	position:absolute;
+}
+#twitterdani {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 746px;
+	position:absolute;
+}
+
+
+#facebookdourado {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 1090px;
+	position:absolute;
+}
+#instadourado {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 1137px;
+	position:absolute;
+}
+#twitterdourado {
+	height: 50px;
+	width: 50px;
+	margin-top: 350px;
+	margin-left: 1185px;
+	position:absolute;
+}
+
+#facebookbraz {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 432px;
+	position:absolute;
+}
+#instabraz {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 480px;
+	position:absolute;
+}
+#twitterbraz {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 530px;
+	position:absolute;
+}
+
+#facebookpedro {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 870px;
+	position:absolute;
+}
+#instapedro {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 920px;
+	position:absolute;
+}
+#twitterpedro {
+	height: 50px;
+	width: 50px;
+	margin-top: 635px;
+	margin-left: 972px;
+	position:absolute;
+}
+
+
+.image {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 239px;
+  width: 239px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #003;
+  border-radius: 100%;
+}
+
+#sobre:hover .overlay {
+  opacity: 1;
+}
+#sobredani:hover .overlay {
+  opacity: 1;
+}
+#sobredourado:hover .overlay {
+  opacity: 1;
+}
+#sobrebraz:hover .overlay {
+  opacity: 1;
+}
+#sobrepedro:hover .overlay {
+  opacity: 1;
+}
+.textdani {
+	text-align: center;
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	vertical-align: middle;
+	margin-top: 40px;
+}
+.textvini{
+	text-align: center;
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	vertical-align: middle;
+	margin-top: 30px;
+}
+.textdourado{
+	text-align: center;
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	vertical-align: middle;
+	margin-top: 25px;
+}
+.textbraz{
+	text-align: center;
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	vertical-align: middle;
+	margin-top: 40px;
+}
+.textpedro{
+	text-align: center;
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	vertical-align: middle;
+	margin-top: 40px;
+}
+#sobre img {
+	border-radius: 100%;
+	position: absolute;
+	
+}
+#sobrebraz img {
+	border-radius: 100%;
+	position: absolute;
+	
+}
+#sobredani img {
+	border-radius: 100%;
+	position: absolute;
+	
+}
+#sobrepedro img {
+	border-radius: 100%;
+	position: absolute;
+	
+}
+#sobredourado img {
+	border-radius: 100%;
+	position: absolute;
+	
+}
+h2 {
+	font-family: "Century Gothic", Century, Arial, sans-serif;
+	font-size: 1em;
+	font-style: italic;
+}

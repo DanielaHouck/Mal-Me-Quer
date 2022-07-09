@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mal me quer</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="home.html"><img src="imagens/logo.fw.png" /></a>  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Ajuda</a>
+    <ul>
+      <li><a href="leis.html">Leis</a></li>
+      <li><a href="ongs.html">ONGs</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Depoimentos</a>
+    <ul>
+      <li><a href="Depoimentos.html">Dia a dia</a></li>
+      <li><a href="Depoimentos_famosos.html">Famosos</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="MenuBarItemSubmenu">Informa&ccedil;&otilde;es</a>
+    <ul>
+      <li><a href="comodenunciar.html">Como denunciar</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="historia.html">Hist&oacute;ria</a></li>
+      <li><a href="tipos.html">Formas de viol&ecirc;ncia</a></li>
+</ul>
+  </li>
+  <li><a href="galeria.html">Galeria</a>  </li>
+  <li><a href="sobrenos.html">Sobre n&oacute;s</a></li>
+</ul>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+ <img src="imagens/back_home1.fw.png" id="img1" style="width: 100%;" />
+ <div id="js">
+ 
+ </div>
+ <div id="pass" class="pass1" onclick="pass(0)">
+ </div>
+ <div id="pass" class="pass2" onclick="pass(1)">
+ </div>
+ <div id="pass" class="pass3" onclick="pass(2)">
+ </div>
+ <script>
+ 	var valor = Number(0)
+	manchete(valor)
+	
+ 	function pass(a){
+		manchete(valor = a)
+	}
+	function passauto(){
+		manchete(valor += 1)	
+	}
+	window.setInterval("passauto()",15000)
+	function manchete() {
+		if (valor > 2){
+		valor = Number(0)
+	}
+	switch (valor) {
+		case 0:
+		window.document.getElementById('js').innerHTML = '<hr id="line1" noshade="noshade"  /><p class="Hometype" id="par1"> DIGA NÃO À</p><p class="Hometypelow" id="par2"> VIOLÊNCIA CONTRA</p><p class="Hometype" id="par3"> A MULHER</p><p class="Hometypered" id="par4"> DENUNCIE</p><hr id="line2" noshade="noshade" /> '
+		break;
+		case 1:
+			window.document.getElementById('js').innerHTML = '<img src="imagens/manchete1.fw.png" alt="manchete 1" class="backimghalf" id="man1" />'
+			break;
+		case 2:
+		window.document.getElementById('js').innerHTML = '<img src="imagens/manchete2.fw.png" alt="manchete 2" class="backimghalf" id="man1" />'
+			break;
+	}
+	}
+ </script>
+
+ <img src="imagens/arrow_Low.fw.png" class="backimghalf" id="moreconteudo" />
+ <img src="imagens/back_home2.fw.png" class="backimg" id="img2" />
+ <div id="botao" class="btleft" onclick="button(-1)"> </div>
+ <div id="botao" class="btright" onclick="button(+1)"> </div>
+ <div id="viol" class="Hometypelow"><p>A cada 2 segundos,</p></div>
+ <div id="cont" class="Hometype"><p>00000</p></div>
+ <div id="viol2" class="Hometypelow"><p>Mulheres sofreram só hoje</p></div>
+
+ <script>
+  var tipo = Number(0)
+    contador(tipo)
+
+    function button(n) {
+        contador(tipo += n)
+    }
+
+  function contador() {
+
+	if (tipo >= 12) {
+            tipo = Number(0)
+        }  
+    if (tipo <= -1) {
+            tipo = Number(11)
+        }  
+
+    switch (tipo) {
+        case 0:
+            sd = Number(2)
+            viol = '<p> A cada 2 segundos,</p> <p> uma mulher é vítima de <span class="rosa">violência física ou verbal </span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">agredidas física ou verbalmente</span> hoje. </p>'
+            break;
+        case 1:
+            sd = Number(2.6)
+            viol = '<p> A cada 2,6 segundos,</p> <p> uma mulher é vítima de <span class="rosa">ofensa verbal</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">ofendidas verbalmente</span> hoje. </p>'
+            break;
+        case 2:
+            sd = Number(6.3)
+            viol = '<p> A cada 6,3 segundos,</p> <p> uma mulher é vítima de <span class="rosa">ameaça de violência</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">ameaçadas </span>hoje. </p>'
+            break;
+        case 3:
+            sd = Number(6.9)
+            viol = '<p> A cada 6,9 segundos,</p> <p> uma mulher é vítima de <span class="rosa">perseguição.</span> </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">perseguidas</span> hoje. </p>'
+            break;
+        case 4:
+            sd = Number(7.2)
+            viol = '<p> A cada 7,2 segundos,</p> <p> uma mulher é vítima de <span class="rosa">violência física.</span> </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">agredidas físicamente</span> hoje. </p>'
+            break;
+        case 5:
+            sd = Number(120)
+            viol = '<p> A cada 2 minutos,</p> <p> uma mulher é vítima de <span class="rosa">arma de fogo.</span> </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">atingidas por tiros</span> hoje. </p>'
+            break;
+        case 6:
+            sd = Number(16.6)
+            viol = '<p> A cada 16,6 segundos,</p> <p> uma mulher é vítima de <span class="rosa">ameça com arma de fogo ou faca</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">ameaçadas por armas de fogo ou facas</span> hoje. </p>'
+            break;
+        case 7:
+            sd = Number(22.5)
+            viol = '<p> A cada 22,5 segundos,</p> <p> uma mulher é vítima de <span class="rosa">espancamento ou tentativa de enforcamento</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">espancadas ou sofreram tentativa de estrangulamento</span> hoje. </p>'
+            break;
+        case 8:
+            sd = Number(1.4)
+            viol = '<p> A cada 1,4 segundos,</p> <p> uma mulher é vitima de <span class="rosa">assédio</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">assediadas</span> hoje. </p>'
+            break;
+        case 9:
+            sd = Number(1.5)
+            viol = '<p> A cada 1,5 segundos,</p> <p> uma mulher é vítima de <span class="rosa">assédio na rua</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">assediadas na rua</span> hoje. </p>'
+            break;
+        case 10:
+            sd = Number(4.6)
+            viol = '<p> A cada 4,6 segundos,</p> <p> uma mulher é vítima de <span class="rosa">assédio no trabalho</span>. </p>'
+            viol2 = '<p> mulheres já foram <span class="rosa">assediadas no trabalho</span> hoje. </p>'
+            break;
+        case 11:
+            sd = Number(6.1)
+            viol = '<p> A cada 6,1 segundos,</p> <p> uma mulher é vítima de <span class="rosa">assédio físico no transporte público</span>. </p>'
+            viol2 = '<p> mulheres já sofreram <span class="rosa">assédio físico no transporte público</span> hoje. </p>'
+            break;
+    }
+
+   var data = new Date()
+   var horas = data.getHours()
+   var minutos = data.getMinutes()
+   var segundos = data.getSeconds()
+   var nh = Number(horas)
+   var nm = Number(minutos)
+   var ns = Number(segundos)
+   var rel = parseInt((((nh*60+nm)*60+ns)-(((nh*60+nm)*60+ns)%sd))/sd)
+   if (rel < 10) {
+     rel = `0000${rel}`
+   } 
+    else {
+    if (rel < 100) {
+     rel = `000${rel}`
+    }
+    else {
+    if (rel < 1000) {
+     rel = `00${rel}`
+    }
+    else {
+    if (rel < 10000) {
+     rel = `0${rel}`
+    }
+    }
+    }
+    }
+  
+    window.document.getElementById('viol').innerHTML = viol
+	 window.document.getElementById('cont').innerHTML = rel
+	  window.document.getElementById('viol2').innerHTML = viol2
+  }
+  window.setInterval('contador()',0000)
+  
+ </script>
+
+ <img src="imagens/back_home3.fw.png" class="backimg" id="img3" />
+<div id="blocopart3" > 
+ <p id="basta" class="em4"> BASTA!</p>
+ <p id="basta2" class="em4"> não esconda</p>
+ <p id="basta3" class="em4"> denuncie,</p>
+ <p id="basta4" class="Hometype"> <span class="rosa2">ligue 180</span></p>
+ <iframe id="hjfloresvid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mg92G5wBWus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <p id="hjfloresfra" class="Hometypelow2"> "Hoje eu recebi flores" </p>
+ </div>
+ 
+ <img src="imagens/Rodape.fw.png" class="backimg" id="rodape" style="width: 100%;" />
+ 
+</body>
+</html>
